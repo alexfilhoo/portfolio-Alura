@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.titulo-destaque {
+  color: aqua;
+}
+
+.apresentacao {
+  padding: 4% 10% 10% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.apresentacao_conteudo {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao_conteudo_titulo {
+  font-size: 2.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+.apresentacao_conteudo_texto {
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.apresentacao-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.estilo-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 1px solid aqua;
+  width: 50%;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+
+.estilo-btn:hover {
+  transform: scale(1.05);
+  background-color: rgba(49, 49, 49, 0.5);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.titulo-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.rodape {
+  color: black;
+  background-color: aqua;
+  padding: 24px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cabecalho_menu {
+  display: flex;
+  gap: 50px;
+  padding: 2% 0% 0% 20%;
+}
+
+.cabecalho_link {
+  text-decoration: none;
+  color: aqua;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.apresentacao_imagem {
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .apresentacao_conteudo {
+    width: auto;
+  }
+
+  .cabecalho_menu {
+    padding: 10%;
+    justify-content: center;
+  }
+}
